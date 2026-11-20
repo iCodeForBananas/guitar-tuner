@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Full-bleed background; the mark stays inside the central 60% so the maskable crop keeps it. -->
+  <rect width="1024" height="1024" fill="#101214"/>
+  <!-- Meter track -->
+  <rect x="232" y="452" width="560" height="120" rx="28" fill="#2a2e34"/>
+  <!-- In-tune window, lit -->
+  <rect x="482" y="452" width="60" height="120" fill="#3ddc84"/>
+  <!-- Ticks -->
+  <g fill="#ffffff" fill-opacity="0.22">
+    <rect x="300" y="540" width="6" height="32"/>
+    <rect x="360" y="540" width="6" height="32"/>
+    <rect x="420" y="540" width="6" height="32"/>
+    <rect x="598" y="540" width="6" height="32"/>
+    <rect x="658" y="540" width="6" height="32"/>
+    <rect x="718" y="540" width="6" height="32"/>
+  </g>
+  <!-- Needle -->
+  <rect x="502" y="420" width="20" height="184" rx="10" fill="#ffffff"/>
+  <!-- Strings above and below -->
+  <g fill="#9aa0a8">
+    <rect x="232" y="352" width="560" height="10" rx="5"/>
+    <rect x="232" y="384" width="560" height="8" rx="4"/>
+    <rect x="232" y="632" width="560" height="6" rx="3"/>
+    <rect x="232" y="660" width="560" height="4" rx="2"/>
+  </g>
+</svg>

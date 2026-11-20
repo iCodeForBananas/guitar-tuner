@@ -1,0 +1,42 @@
+{
+  "name": "guitar-tuner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A free, open-source guitar tuner for iPhone, iPad, Android and the web. Pick a string, pluck it, and get it green.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iCodeForBananas/guitar-tuner.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "sync": "npm run build && cap sync",
+    "android": "npm run sync && cap open android",
+    "ios": "npm run sync && cap open ios",
+    "assets": "capacitor-assets generate --iconBackgroundColor #101214 --iconBackgroundColorDark #101214 --splashBackgroundColor #101214 --splashBackgroundColorDark #101214 --ios --android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/ios": "^8.6.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.8",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.1.1",
+    "workbox-window": "^7.4.1"
+  }
+}
